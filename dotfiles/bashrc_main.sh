@@ -12,6 +12,7 @@ export PAGER="less"
 export LANG="en_US.UTF-8"
 export TERM="xterm-256color"
 export HISTTIMEFORMAT="%Y-%m-%d %H:%M:%S %Z  "
+export VIMINIT='let $MYVIMRC="$HOME/.vimrc_main" | source $MYVIMRC'
 
 # History settings
 HISTSIZE=10000
