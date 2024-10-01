@@ -87,3 +87,14 @@ turbo_mode() {
     echo "⠀⠀⠀⠀⠀⠀⠀⠙⠳⠦⢤⣤⠤⠾⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠛⠒⠒⠛⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀"
     echo -e "\033[0m"
 }
+
+# Function: setroot
+# Usage: setroot <file>
+setroot() {
+    if [ $# -ne 1 ]; then
+        echo "Usage: setroot <file>"
+        return 1
+    fi
+    chown root:root "$1"
+}
+
