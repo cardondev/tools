@@ -1,4 +1,3 @@
-#!/bin/bash
 # Display system information
 sysinfo() {
     echo -e "\033[0;36mHostname:\033[0m $(hostname)"
